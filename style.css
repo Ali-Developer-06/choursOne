@@ -1,0 +1,1127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+:root{
+    --primary-font: Roobert;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #14838E;
+}
+@font-face{
+    font-family: Roobert;
+    src: url(RoobertFont/RoobertTRIAL-Light-BF67243fd502239.otf);
+}
+@font-face{
+    font-family: Roobert-bold;
+    src: url(RoobertFont/RoobertTRIAL-Regular-BF67243fd53fdf2.otf);
+}
+.container{
+    padding: 0 75px;
+}
+
+
+/** ======= Header Section Styling ======= */
+
+
+#headerTopPlusBottom{
+    width: 100%;
+    height: 160px;
+    z-index: 1000;
+    padding: 15px 0;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.headerTop{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.headerTop a{
+    letter-spacing: .5px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.headerTop b a:hover{
+    text-decoration: underline;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    z-index: 1000;
+    position: relative;
+    padding: 20px 30px;
+    align-items: center;
+    color: var(--black-color);
+    background-color: #ffffff72;
+    justify-content: space-between;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    display: flex;
+    gap: 15px;
+}
+.nav-links a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%; left: 0;
+    background-color: var(--white-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.dropdown-content a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.dropdown-content.active{
+    display: block;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+
+/** ======= Hero Section Styling ======= */
+
+
+.hero{
+    display: flex;
+    margin: 0 50px;
+    border-radius: 50px;
+    padding: 175px 50px 50px;
+    background-color: var(--white-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.heroContent{
+    width: 50%
+}
+.heroContent h1{
+    font-size: 72px;
+    background: linear-gradient(to right, #0F1314, #14838E);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.heroContent p{
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.heroImage{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.heroImage img{
+    width: 400px;
+}
+.heroContentBtns{
+    display: flex;
+    gap: 20px;
+}
+.heroContentBtn{
+    text-decoration: none;
+}
+.heroContentBtn:nth-child(1){
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+}
+.heroContentBtn:nth-child(1) i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+.heroContentBtn:nth-child(1):hover i{
+    border: 2px solid #fff;
+    color: var(--white-color);
+    background-color: #000;
+}
+.heroContentBtn:nth-child(1) p{
+    font-size: 15px;
+    color: var(--white-color);
+}
+.heroContentBtn:nth-child(2){
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.heroContentBtn:nth-child(2) i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    border: 1px solid #000;
+    color: var(--black-color);
+}
+.heroContentBtn:nth-child(2):hover i{
+    color: var(--white-color);
+    background-color: #000;
+}
+.heroContentBtn:nth-child(2) p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+
+/** ======= Asset & Reward Section Styling ======= */
+
+
+.assetReward{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 50px;
+}
+.assetReward h1{
+    font-size: 40px;
+}
+.assetReward p{
+    font-size: 14px;
+    color: #4E4E4E;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.assetRewardLine{
+    width: 1.4px;
+    height: 80px;
+    background-color: var(--primary-color);
+}
+
+
+/** ======= Image Carousel Section Styling ======= */
+
+
+.imageCarousel{
+    width: 100%;
+    height: 80px;
+    margin: 50px 0 0;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to left, #0F1314, #14838E);
+}
+.carouselTrack{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: relative;
+    white-space: nowrap;
+}
+.carouselTrack img{
+    height: 50px;
+    width: auto;
+}
+
+
+/** ======= Front Crypto Section Styling ======= */
+
+
+.frontCrypto{
+    text-align: center;
+    background-color: var(--white-color);
+}
+.frontCrypto h1{
+    font-size: 52px;
+    padding-top: 50px;
+}
+.frontCrypto p{
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Roobert-bold;
+}
+.frontCryptoCards{
+    gap: 20px;
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+.frontCryptoCard{
+    text-align: left;
+    padding: 50px 30px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    border: 1.5px solid lightgray;
+}
+.frontCryptoCard h2{
+    font-size: 28px;
+}
+.frontCryptoCard p{
+    color: gray;
+    font-size: 17px;
+    padding: 30px 0;
+}
+.frontCryptoCard a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #000;
+    border-radius: 50px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.frontCryptoCard:hover{
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.frontCryptoCard:hover a{
+    border: 1px solid #14838E;
+}
+.frontCryptoCard:hover i{
+    color: #14838E;
+}
+
+
+/** ======= Our Partner Section Styling ======= */
+
+
+.ourPartners h1{
+    padding: 50px 0;
+    font-size: 45px;
+    text-align: center;
+}
+.swiper{
+    width: 85%;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide{
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: #f6f6f6;
+    border: 1px solid lightgray;
+}
+.swiperSlideContent p{
+    font-size: 20px;
+    font-family: Roobert-bold;
+}
+.swiperSlideContent i:nth-child(odd){
+    display: flex;
+    font-size: 30px;
+    align-items: flex-start;
+    color: var(--primary-color);
+}
+.swiperSlideContent i:last-child{
+    display: flex;
+    font-size: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: var(--primary-color);
+}
+.swiper-slide h3{
+    padding-top: 100px;
+    font-family: Roobert-bold;
+}
+.swiper-slide p:last-child{
+    color: gray;
+    font-size: 21px;
+}
+.swiper-pagination{
+    left: 50%;
+    z-index: 10;
+    bottom: -40px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.swiper-pagination-bullet{
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: var(--black-color);
+}
+.swiper-pagination-bullet-active{
+    background-color: #76BDC4 !important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: black !important;
+    font-size: 10px !important;
+}
+
+
+/** ======= YT video Section Styling ======= */
+
+
+.youtubeVideo{
+    padding-top: 50px;
+}
+.youtubeVideo iframe{
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+}
+
+
+/** ======= Network Support Section Styling ======= */
+
+
+.networkSupport{
+    padding: 50px 0 100px;
+    background: linear-gradient(to bottom, #ffffff, #76BDC4);
+}
+.networkSupport h1{
+    font-size: 52px;
+    text-align: center;
+}
+.networkContnetPlusBtns{
+    display: flex;
+    padding: 0 75px;
+    align-items: center;
+    justify-content: center;
+}
+.networkContents{
+    width: 30%;
+}
+.networkContent{
+    padding: 20px 0;
+}
+.networkContentPlusIcon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.networkContent .networkContentPra{
+    font-size: 20px;
+    padding-left: 30px;
+}
+.networkContentPlusIcon i{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.networkContentPlusIcon p{
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: Roobert-bold;
+    color: var(--primary-color);
+}
+.networkBtns{
+    gap: 50px;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.networkBtns a{
+    width: 140px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--black-color);
+    background: linear-gradient(225deg, transparent 14%, var(--white-color) 6%);
+}
+.networkBtns a:last-child{
+    color: var(--primary-color);
+}
+.networkBtns a i{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    border: 1px solid #14838E;
+}
+
+
+/** ======= Latest Article Section Styling ======= */
+
+
+.latestArticle{
+    margin-top: -50px;
+    padding-top: 50px;
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+}
+.articleHeading{
+    padding: 50px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to right, #0F1314, #14838E);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.latestArticleCards{
+    gap: 30px;
+    display: flex;
+}
+.latestArticleCard{
+    width: 33.33%;
+}
+.latestArticleCard:hover .articleLine{
+    width: 100%;
+    height: 5px;
+    background-color: var(--black-color);
+}
+.articleLine{
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-color);
+}
+.latestArticleCard h1{
+    font-size: 32px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-family: Roobert-bold;
+}
+.latestArticleCard p{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Roobert-bold;
+}
+.latestCardButton{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 50px;
+    justify-content: center;
+}
+.latestArticleBtn{
+    gap: 10px;
+    height: 50px;
+    width: 175px;
+    padding: 0 10px;
+    margin-top: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--black-color);
+}
+.latestArticleBtn i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+.latestArticleBtn:hover i{
+    border: 2px solid #fff;
+    color: var(--white-color);
+    background-color: #000;
+}
+.latestArticleBtn p{
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+
+/** ======= Our Podcast Section Styling ======= */
+
+
+.ourPodcast{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.podcastHeadingPlusBtn{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px;
+    justify-content: space-between;
+}
+.podcastHeadingPlusBtn h1{
+    font-size: 48px;
+}
+.podcastBtn{
+    gap: 10px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: var(--black-color);
+}
+.podcastBtn i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+.podcastBtn:hover i{
+    border: 2px solid #fff;
+    color: var(--white-color);
+    background-color: #000;
+}
+.podcastBtn p{
+    font-size: 15px;
+    color: var(--white-color);
+}
+.podcastVideo{
+    padding: 40px 0;
+    transition: .4s all ease-in-out;
+}
+.podcastVideo:hover{
+    padding: 40px 30px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+.podcastVideoIcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.podcastVideoIcon h1{
+    padding: 20px 0;
+    font-size: 32px;
+}
+.podcastVideoIcon a{
+    text-decoration: none;
+}
+.podcastVideoIcon i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+.podcastVideo:hover .podcastVideoIcon i{
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+.podcastVideo h3{
+    font-family: Roobert-bold;
+}
+.podcastVideo p{
+    color: gray;
+    font-size: 19px;
+    font-family: Roobert-bold;
+}
+
+
+/** ======= Join Chorus Section Styling ======= */
+
+
+.joinChorus{
+    display: flex;
+    padding-top: 75px;
+    background-color: #f6f6f6;
+    border-bottom: 2px solid lightgray;
+}
+.joinChorusContent{
+    width: 45%;
+    padding-left: 75px;
+}
+.joinChorusContent h1{
+    font-size: 58px;
+    padding: 30px 0;
+}
+.joinChorusContent p{
+    font-size: 20px;
+}
+.joinChorusContent .podcastBtn{
+    width: 200px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.joinChorusContent .podcastBtn p{
+    font-size: 15px;
+}
+.joinChorusImage{
+    width: 50%;
+}
+.joinChorusImage img{
+    width: 100%;
+}
+
+
+/** ======= Our Newsletter Section Styling ======= */
+
+
+.ourNewsletter{
+    display: flex;
+    padding: 75px 0;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.ourNewsletter h1{
+    font-size: 32px;
+    padding: 10px 0;
+    font-family: Roobert-bold;
+}
+.newslwtterInputPlusBtn{
+    padding: 2.5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+.newslwtterInputPlusBtn input{
+    width: 325px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+}
+.newslwtterInputPlusBtn a{
+    padding: 0 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+/** ======= Footer Section Styling ======= */
+
+
+footer{
+    color: var(--white-color);
+    background-color: #0F0F0F;
+    border-radius: 40px 40px 0 0;
+}
+.footerLogoPlusPra{
+    padding-top: 75px;
+}
+.footerLogoPlusPra p{
+    width: 65%;
+    padding-top: 30px;
+}
+.footerContent{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.footerContent br{
+    display: none;
+}
+.footerContentSections{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footerContentSections p{
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footerContentSections a{
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+footer a:hover{
+    color: var(--primary-color);
+}
+footer .ourNewsletter{
+    display: flex;
+    align-items: flex-start;
+}
+footer .ourNewsletter h1{
+    font-size: 20px;
+}
+footer .newslwtterInputPlusBtn{
+    margin: 0;
+}
+footer .newslwtterInputPlusBtn input{
+    width: 200px;
+}
+footer .newslwtterInputPlusBtn a:hover{
+    color: var(--white-color);
+}
+.footerBottom{
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerBottomLeft p{
+    color: gray;
+}
+.footerBottomRight br{
+    display: none;
+}
+.footerBottomRight a{
+    color: gray;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+
+/** ======= Media Query Styling ======= */
+
+
+@media (max-width: 768px) {
+
+    .container{
+        padding: 0 20px;
+    }
+
+    /*? ==== Header Section ==== */
+
+    #headerTopPlusBottom{
+        width: 100%;
+        height: 175px;
+        /* padding: 10px; */
+    }
+    .headerTop{
+        gap: 10px;
+        width: 300px;
+        padding: 5px 20px;
+        flex-direction: column;
+    }
+    .headerTop span{
+        display: none;
+    }
+    .headerTop p{
+        font-size: 14px;
+    }
+    .navbar{
+        width: 100%;
+        padding: 15px 30px;
+    }
+    .nav-links{
+        gap: 0;
+        width: 100%;
+        display: none;
+        top: 82px; left: 0;
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--white-color);
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .nav-links a{
+        padding: 15px;
+        font-weight: 600;
+    }
+    .dropdown{
+        padding: 15px 0;
+    }
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+        border: 1px solid var(--black-color);
+    }
+
+    /*? ==== Hero Section ==== */
+
+    .hero{
+        margin: 0;
+        box-shadow: none;
+        padding: 190px 20px 20px;
+    }
+    .heroContent{
+        width: 100%;
+        text-align: center;
+    }
+    .heroContent h1{
+        font-size: 42px;
+    }
+    .heroContent p{
+        font-size: 20px;
+    }
+    .heroContentBtns{
+        flex-direction: column;
+    }
+    .heroContentBtn:nth-child(1),
+    .heroContentBtn:nth-child(2){
+        width: 100%;
+    }
+    .heroContentBtn:nth-child(1) i,
+    .heroContentBtn:nth-child(2) i{
+        display: none;
+    }
+    .heroContentBtn:nth-child(1) p,
+    .heroContentBtn:nth-child(2) p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .heroImage{
+        display: none;
+    }
+
+    /*? ==== Asset Section ==== */
+
+    .assetReward{
+        padding: 25px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .assetContent,
+    .rewardContent{
+        margin-left: 20px;
+        padding-left: 20px;
+        border-left: 2px solid var(--primary-color);
+    }
+    .assetRewardLine{
+        display: none;
+    }
+
+    /*? ==== Image Carousel Section ==== */
+
+    .imageCarousel{
+        margin: 25px 0 0;
+    }
+
+    /*? ==== Front Crypto Section ==== */
+
+    .frontCrypto h1{
+        font-size: 42px;
+    }
+    .frontCrypto p br{
+        display: none;
+    }
+    .frontCrypto p{
+        font-size: 20px;
+    }
+    .frontCryptoCards{
+        flex-direction: column;
+    }
+
+    /*? ==== Our Partner Section ==== */
+
+    .ourPartners h1{
+        font-size: 32px;
+    }
+    .swiper-slide{
+        padding: 30px;
+    }
+    .swiperSlideContent p{
+        font-size: 18px;
+    }
+    .swiperSlideContent i:nth-child(odd),
+    .swiperSlideContent i:last-child{
+        font-size: 25px;
+    }
+    .swiper-slide h3{
+        padding-top: 15px;
+    }
+
+    /*? ==== YT video Section ==== */
+
+    .youtubeVideo iframe{
+        height: 150px;
+    }
+
+    /*? ==== network Support Section ==== */
+
+    .networkSupport h1{
+        font-size: 42px;
+    }
+    .networkContnetPlusBtns{
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .networkContents{
+        width: 100%;
+    }
+    .networkContentPlusIcon p br{
+        display: none;
+    }
+    .networkContent .networkContentPra{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .networkBtns{
+        gap: 30px;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    /*? ==== network Support Section ==== */
+
+    .articleHeading{
+        font-size: 38px;
+    }
+    .latestArticleCards{
+        flex-direction: column;
+    }
+    .latestArticleCard{
+        width: 100%;
+    }
+    .latestArticleCard h1{
+        font-size: 24px;
+    }
+
+    /*? ==== Our Podcast Section ==== */
+
+    .podcastHeadingPlusBtn h1{
+        font-size: 32px;
+    }
+    .podcastBtn{
+        display: none;
+    }
+    .podcastVideos{
+        flex-direction: column;
+    }
+    .podcastVideoIcon{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .podcastVideoIcon h1{
+        font-size: 24px;
+    }
+    .podcastVideo p{
+        margin-bottom: 40px;
+    }
+    .podcastVideoIcon a{
+        bottom: -90px;
+        position: absolute;
+    }
+
+    /*? ==== Join Chorus Section ==== */
+
+    .joinChorus{
+        flex-direction: column;
+    }
+    .joinChorusContent,
+    .joinChorusImage{
+        width: 100%;
+        padding: 20px;
+    }
+    .joinChorusContent h1{
+        font-size: 38px;
+        text-align: center;
+    }
+    .joinChorusContent p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .joinChorusContent .podcastBtn{
+        display: flex;
+    }
+
+    /*? ==== Our Newsletter Section ==== */
+
+    .ourNewsletter h1{
+        font-size: 30px;
+    }
+    .ourNewsletter p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .ourNewsletter p br{
+        display: none;
+    }
+    .newslwtterInputPlusBtn input{
+        width: 200px;
+    }
+
+    /*? ==== Footer Section ==== */
+
+    .footerLogoPlusPra img{
+        width: 90%;
+    }
+    .footerLogoPlusPra p{
+        width: 100%;
+        font-size: 15px;
+    }
+    .footerContent{
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .footerContent br{
+        display: block;
+    }
+    footer .newslwtterInputPlusBtn input{
+        width: 190px;
+    }
+    .footerBottom{
+        flex-direction: column-reverse;
+    }
+    .footerBottomLeft p{
+        padding-top: 20px;
+    }
+    .footerBottomRight br{
+        display: block;
+    }
+    .footerBottomRight a{
+        padding: 10px;
+    }
+}
