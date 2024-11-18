@@ -123,7 +123,7 @@
     width: 50%
 }
 .heroContent h1{
-    font-size: 72px;
+    font-size: 70px;
     background: linear-gradient(to right, #0F1314, #14838E);
     -webkit-background-clip: text;
     color: transparent;
@@ -151,7 +151,7 @@
 }
 .heroContentBtn:nth-child(1){
     height: 50px;
-    width: 150px;
+    width: 160px;
     border-radius: 50px;
     display: flex;
     gap: 10px;
@@ -677,35 +677,35 @@
 /** ======= Join Chorus Section Styling ======= */
 
 
-.joinChorus{
+.joinFhorus{
     display: flex;
     padding-top: 75px;
     background-color: #f6f6f6;
     border-bottom: 2px solid lightgray;
 }
-.joinChorusContent{
+.joinFhorusContent{
     width: 45%;
     padding-left: 75px;
 }
-.joinChorusContent h1{
+.joinFhorusContent h1{
     font-size: 58px;
     padding: 30px 0;
 }
-.joinChorusContent p{
+.joinFhorusContent p{
     font-size: 20px;
 }
-.joinChorusContent .podcastBtn{
+.joinFhorusContent .podcastBtn{
     width: 200px;
     font-weight: 600;
     margin-top: 50px;
 }
-.joinChorusContent .podcastBtn p{
+.joinFhorusContent .podcastBtn p{
     font-size: 15px;
 }
-.joinChorusImage{
+.joinFhorusImage{
     width: 50%;
 }
-.joinChorusImage img{
+.joinFhorusImage img{
     width: 100%;
 }
 
@@ -1057,23 +1057,23 @@ footer .newslwtterInputPlusBtn a:hover{
 
     /*? ==== Join Chorus Section ==== */
 
-    .joinChorus{
+    .joinFhorus{
         flex-direction: column;
     }
-    .joinChorusContent,
-    .joinChorusImage{
+    .joinFhorusContent,
+    .joinFhorusImage{
         width: 100%;
         padding: 20px;
     }
-    .joinChorusContent h1{
+    .joinFhorusContent h1{
         font-size: 38px;
         text-align: center;
     }
-    .joinChorusContent p{
+    .joinFhorusContent p{
         font-size: 16px;
         font-weight: 600;
     }
-    .joinChorusContent .podcastBtn{
+    .joinFhorusContent .podcastBtn{
         display: flex;
     }
 
