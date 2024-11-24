@@ -427,6 +427,7 @@
     text-align: center;
 }
 .networkContnetPlusBtns{
+    gap: 50px;
     display: flex;
     padding: 0 75px;
     align-items: center;
@@ -953,7 +954,7 @@ footer .newslwtterInputPlusBtn a:hover{
     /*? ==== Front Crypto Section ==== */
 
     .frontCrypto h1{
-        font-size: 42px;
+        font-size: 28px;
     }
     .frontCrypto p br{
         display: none;
@@ -963,6 +964,10 @@ footer .newslwtterInputPlusBtn a:hover{
     }
     .frontCryptoCards{
         flex-direction: column;
+    }
+    .frontCryptoCard{
+        width: 100%;
+        height: max-content;
     }
 
     /*? ==== Our Partner Section ==== */
@@ -996,6 +1001,7 @@ footer .newslwtterInputPlusBtn a:hover{
         font-size: 42px;
     }
     .networkContnetPlusBtns{
+        gap: 20px;
         padding: 0 20px;
         flex-direction: column;
     }
@@ -1060,6 +1066,7 @@ footer .newslwtterInputPlusBtn a:hover{
     /*? ==== Join Chorus Section ==== */
 
     .joinChrous{
+        padding-top: 0;
         flex-direction: column;
     }
     .joinChrousContent,
