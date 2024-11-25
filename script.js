@@ -5,8 +5,8 @@ let lastScrollTop = 0;
 const navLinks = document.getElementById("navLinks");
 const hamburger = document.getElementById("hamburger");
 const navbar = document.getElementById("headerTopPlusBottom");
-const dropdownToggle = document.querySelector(".dropdown-toggle");
-const dropdownContent = document.querySelector(".dropdown-content");
+// const dropdownToggle = document.querySelector(".dropdown-toggle");
+// const dropdownContent = document.querySelector(".dropdown-content");
 
 window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY;
@@ -31,16 +31,25 @@ hamburger.addEventListener("click", () => {
     }
 });
 
-dropdownToggle.addEventListener("click", (event) => {
-    event.preventDefault();
-    dropdownContent.classList.toggle("active");
+const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+const dropdownContents = document.querySelectorAll(".dropdown-content");
+
+// Har dropdown ke liye event listener lagao
+dropdownToggles.forEach((toggle, index) => {
+    const content = dropdownContents[index];
+
+    toggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        content.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!toggle.contains(event.target) && !content.contains(event.target)) {
+            content.classList.remove("active");
+        }
+    });
 });
 
-document.addEventListener("click", (event) => {
-    if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
-        dropdownContent.classList.remove("active");
-    }
-});
 
 //* ======= Image Carousel Section Script =======
 
