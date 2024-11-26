@@ -90,7 +90,8 @@
     top: 100%; left: 0;
     border-radius: 10px;
     background-color: var(--white-color);
-    box-shadow: rgba(134, 134, 134, 0.35) 0px 5px 15px;}
+    box-shadow: rgba(134, 134, 134, 0.35) 0px 5px 15px;
+}
 .dropdown1{
     width: 250px;
 }
@@ -741,45 +742,6 @@
 }
 
 
-/** ======= Our Newsletter Section Styling ======= */
-
-
-.ourNewsletter{
-    display: flex;
-    padding: 75px 0;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.ourNewsletter h1{
-    font-size: 32px;
-    padding: 10px 0;
-    font-family: Roobert-bold;
-}
-.newslwtterInputPlusBtn{
-    padding: 2.5px;
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-}
-.newslwtterInputPlusBtn input{
-    width: 325px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 15px 20px;
-    border-radius: 5px 0 0 5px;
-}
-.newslwtterInputPlusBtn a{
-    padding: 0 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: var(--white-color);
-}
-
-
 /** ======= Footer Section Styling ======= */
 
 
@@ -872,6 +834,7 @@ footer .newslwtterInputPlusBtn a:hover{
     #headerTopPlusBottom{
         width: 100%;
         height: 175px;
+        background-color: var(--white-color);
     }
     .headerTop{
         gap: 10px;
@@ -907,6 +870,41 @@ footer .newslwtterInputPlusBtn a:hover{
     }
     .dropdown{
         padding: 15px 0;
+    }
+    .dropdown-content{
+        width: 95%;
+        margin-top: 0;
+        position: static;
+        box-shadow: none;
+    }
+    .nav-links .dropdown-content.active{
+        display: block;
+        animation: slide-down 0.3s ease forwards;
+    }
+    @keyframes slide-down{
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .nav-links.active{
+        padding-top: 10px;
+        transition: transform 0.3s ease;
+    }
+    .dropdown2 a:last-child{
+        width: 90%;
+        padding: 10px;
+        border: 2px solid black;
+        color: var(--black-color);
+        background-color: var(--white-color);
+    }
+    .dropdown2 a:last-child:hover{
+        color: var(--white-color);
+        background-color: var(--black-color);
     }
     .hamburger{
         width: 50px;
@@ -1012,12 +1010,27 @@ footer .newslwtterInputPlusBtn a:hover{
     .swiperSlideContent i:last-child{
         font-size: 25px;
     }
+    .swiper-button-next:after{
+        position: absolute;
+        top: -75px;
+        font-weight: 800px;
+        font-size: 28px !important;
+    }
+    .swiper-button-prev:after{
+        position: absolute;
+        font-weight: 800px;
+        top: -75px; left: -5px;
+        font-size: 28px !important;
+    }
     .swiper-slide h3{
         padding-top: 15px;
     }
 
     /*? ==== YT video Section ==== */
 
+    .youtubeVideo{
+        margin-top: 50px;
+    }
     .youtubeVideo iframe{
         height: 150px;
     }
@@ -1110,23 +1123,11 @@ footer .newslwtterInputPlusBtn a:hover{
         font-weight: 600;
     }
     .joinChrousContent .podcastBtn{
+        width: 210px;
         display: flex;
-    }
-
-    /*? ==== Our Newsletter Section ==== */
-
-    .ourNewsletter h1{
-        font-size: 30px;
-    }
-    .ourNewsletter p{
-        font-size: 16px;
-        padding: 0 20px;
-    }
-    .ourNewsletter p br{
-        display: none;
-    }
-    .newslwtterInputPlusBtn input{
-        width: 200px;
+        padding: 0 10px;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     /*? ==== Footer Section ==== */
